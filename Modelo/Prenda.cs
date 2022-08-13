@@ -19,8 +19,20 @@
 
         #region Propiedades
         public CalidadPrenda Calidad => calidad;
-        public double Precio => precioUnitario;
+        public virtual double Precio => precioUnitario;
         public int Stock => stock;
+        #endregion
+
+        #region Métodos
+        protected double MultiplicadorPorCalidad()
+        {
+            var multiplicador = 1.0;
+
+            if (this.Calidad == CalidadPrenda.PREMIUM)
+                multiplicador = 1.3;
+
+            return multiplicador;
+        }
         #endregion
     }
 
