@@ -1,0 +1,11 @@
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Vista.exe.config
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Vista.exe
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Vista.pdb
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.csproj.AssemblyReference.cache
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.Cotizador.resources
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.Properties.Resources.resources
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.csproj.GenerateResource.cache
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.exe
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.pdb
