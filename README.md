@@ -12,3 +12,7 @@ A continuación se procede a explicar el funcionamiento del cotizador.
 ## La solución:
 La solución se llevo a cabo a través del diseño del siguiente [diagrama](https://drive.google.com/file/d/1JS5lHwksy13u6dx-igInrzxTSuadURSK/view?usp=sharing):
 <img src="/Diagramas/CotizadorDeVentaDeRopa_ParteC.jpg" alt="diagrama de clases"/>
+
+## Parte F: Imprimibles
+Para poder realizar una impresion sobre el historial o sobre la cotización actual, se podria desarrollar una clase Historial y junto con la clase Cotizacion implementar una interfaz IImprimible. De esta forma cada clase podría establecer la forma en la que se imprimen sus datos. Dicha solución se muestrar en el siguiente [diagrama](https://drive.google.com/file/d/1d7QtFAF5_NHhMXSJoZZapK2DdeJICz3e/view?usp=sharing) actualizado:
+<img src="/Diagramas/CotizadorDeVentaDeRopa_ParteF.jpg" alt="diagrama de clases imprimible"/>
