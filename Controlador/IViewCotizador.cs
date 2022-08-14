@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Controllador
+namespace Controlador
 {
     public interface IViewCotizador
     {
@@ -16,8 +16,11 @@ namespace Controllador
         bool EsMangaCorta();
         bool ConCuelloMao();
         bool EsChupin();
-
+        bool EsPremium();
         void MostrarCotizacion(string cotizacion);
+        void MostrarVendedor(string nombre);
+        void MostrarDireccion(string direccion);
+        void MostrarRazonSocial(string razonSocial);
         #endregion
     }
 }
