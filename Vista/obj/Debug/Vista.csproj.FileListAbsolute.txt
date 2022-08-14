@@ -9,3 +9,8 @@ D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.csproj.Generate
 D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
 D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.exe
 D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.pdb
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Controlador.dll
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Modelo.dll
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Controlador.pdb
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Modelo.pdb
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.csproj.CopyComplete

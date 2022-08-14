@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCotizacion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnCotizar = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -88,7 +88,7 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.textBox2);
+            this.panel6.Controls.Add(this.txtCotizacion);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Controls.Add(this.btnCotizar);
             this.panel6.Location = new System.Drawing.Point(-1, 412);
@@ -96,15 +96,15 @@
             this.panel6.Size = new System.Drawing.Size(510, 111);
             this.panel6.TabIndex = 12;
             // 
-            // textBox2
+            // txtCotizacion
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.BlueViolet;
-            this.textBox2.Location = new System.Drawing.Point(264, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(170, 29);
-            this.textBox2.TabIndex = 5;
+            this.txtCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCotizacion.ForeColor = System.Drawing.Color.BlueViolet;
+            this.txtCotizacion.Location = new System.Drawing.Point(264, 42);
+            this.txtCotizacion.Name = "txtCotizacion";
+            this.txtCotizacion.ReadOnly = true;
+            this.txtCotizacion.Size = new System.Drawing.Size(170, 29);
+            this.txtCotizacion.TabIndex = 5;
             // 
             // label5
             // 
@@ -127,6 +127,7 @@
             this.btnCotizar.TabIndex = 9;
             this.btnCotizar.Text = "Cotizar";
             this.btnCotizar.UseVisualStyleBackColor = false;
+            this.btnCotizar.Click += new System.EventHandler(this.btnCotizar_Click);
             // 
             // panel5
             // 
@@ -444,7 +445,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtPrecioUnitario;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCotizacion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCotizar;
         private System.Windows.Forms.Panel panel6;
