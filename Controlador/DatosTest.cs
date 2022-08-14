@@ -49,7 +49,7 @@ namespace Controlador
                     // 250 Calidad Standard
                     Modelo.Pantalon p3 = new Modelo.Pantalon(Modelo.CalidadPrenda.STANDARD, 0, 250, false);
                     // 250 Calidad Premium
-                    Modelo.Pantalon p4 = new Modelo.Pantalon(Modelo.CalidadPrenda.PREMIUM, 0, 750, false);
+                    Modelo.Pantalon p4 = new Modelo.Pantalon(Modelo.CalidadPrenda.PREMIUM, 0, 250, false);
             
             listaPrendas.Add(c1);
             listaPrendas.Add(c2);
