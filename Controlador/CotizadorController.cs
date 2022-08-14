@@ -37,14 +37,21 @@ namespace Controlador
         {
             var cantidad = _viewCotizador.Cantidad();
             var prenda = CrearPrenda(cantidad);
+
             
             ValidarStock(cantidad);
 
             Modelo.Cotizacion cotizacion = new Modelo.Cotizacion(vendedor.ProximoId(), vendedor, prenda, cantidad);
 
-            vendedor.AgregarCotizacion(cotizacion);
+            if (cantidad < 0 || prenda.Precio < 0)
+                throw new Exception("El precio y la cantidad deben ser positivos");
 
-            _viewCotizador.MostrarCotizacion(cotizacion.Cotizar().ToString("0.00"));
+            if(cotizacion.Cantidad > 0 && cotizacion.Cotizar() > 0)
+            {
+                vendedor.AgregarCotizacion(cotizacion);
+
+                _viewCotizador.MostrarCotizacion(cotizacion.Cotizar().ToString("0.00"));
+            }
         }
 
         public void MostrarDatos()

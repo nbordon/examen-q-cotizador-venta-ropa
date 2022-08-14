@@ -28,7 +28,11 @@ namespace Vista
             try
             {
                 txtCantidad.BackColor = Color.White;
-                return Convert.ToInt32(txtCantidad.Text);
+                int cantidad = Convert.ToInt32(txtCantidad.Text);
+                if(cantidad < 0)
+                    txtCantidad.BackColor = Color.Orange;
+
+                return cantidad;
             }
             catch(Exception e)
             {
@@ -93,7 +97,12 @@ namespace Vista
             try
             {
                 txtPrecioUnitario.BackColor = Color.White;
-                return Convert.ToDouble(txtPrecioUnitario.Text);
+                double precio = Convert.ToDouble(txtPrecioUnitario.Text);
+
+                if (precio < 0)
+                    txtPrecioUnitario.BackColor = Color.Orange;
+
+                return precio;
             }
             catch (Exception e)
             {
