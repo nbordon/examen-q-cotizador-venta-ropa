@@ -21,6 +21,7 @@ namespace Controlador
         void MostrarVendedor(string nombre);
         void MostrarDireccion(string direccion);
         void MostrarRazonSocial(string razonSocial);
+        void MostrarCantidadStock(string stock);
         #endregion
     }
 }

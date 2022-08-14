@@ -261,6 +261,7 @@
             this.radPremium.TabStop = true;
             this.radPremium.Text = "Premium";
             this.radPremium.UseVisualStyleBackColor = true;
+            this.radPremium.CheckedChanged += new System.EventHandler(this.radPremium_CheckedChanged);
             // 
             // radStandard
             // 
@@ -272,20 +273,21 @@
             this.radStandard.TabStop = true;
             this.radStandard.Text = "Standard";
             this.radStandard.UseVisualStyleBackColor = true;
+            this.radStandard.CheckedChanged += new System.EventHandler(this.radStandard_CheckedChanged);
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txtStock);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(41, 309);
+            this.panel3.Location = new System.Drawing.Point(41, 303);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(450, 24);
+            this.panel3.Size = new System.Drawing.Size(450, 35);
             this.panel3.TabIndex = 6;
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(167, 2);
+            this.txtStock.Location = new System.Drawing.Point(167, 7);
             this.txtStock.Name = "txtStock";
             this.txtStock.ReadOnly = true;
             this.txtStock.Size = new System.Drawing.Size(100, 20);
@@ -295,7 +297,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 4);
+            this.label2.Location = new System.Drawing.Point(13, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 16);
             this.label2.TabIndex = 0;
@@ -325,6 +327,7 @@
             this.chkChupin.TabIndex = 4;
             this.chkChupin.Text = "Chupín";
             this.chkChupin.UseVisualStyleBackColor = true;
+            this.chkChupin.CheckedChanged += new System.EventHandler(this.chkChupin_CheckedChanged);
             // 
             // chkCuelloMao
             // 
@@ -335,6 +338,7 @@
             this.chkCuelloMao.TabIndex = 3;
             this.chkCuelloMao.Text = "Cuello Mao";
             this.chkCuelloMao.UseVisualStyleBackColor = true;
+            this.chkCuelloMao.CheckedChanged += new System.EventHandler(this.chkCuelloMao_CheckedChanged);
             // 
             // chkMarngaCorta
             // 
@@ -345,6 +349,7 @@
             this.chkMarngaCorta.TabIndex = 2;
             this.chkMarngaCorta.Text = "Manga Corta";
             this.chkMarngaCorta.UseVisualStyleBackColor = true;
+            this.chkMarngaCorta.CheckedChanged += new System.EventHandler(this.chkMarngaCorta_CheckedChanged);
             // 
             // radPantalon
             // 

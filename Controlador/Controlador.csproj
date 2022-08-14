@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CotizadorController.cs" />
+    <Compile Include="DatosTest.cs" />
     <Compile Include="IViewCotizador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

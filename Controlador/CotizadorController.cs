@@ -18,8 +18,11 @@ namespace Controlador
         public CotizadorController(IViewCotizador viewCotizador)
         {
             _viewCotizador = viewCotizador;
-            this.tienda = new Modelo.Tienda("Tienda Pepito", "Corrientes 2320");
-            this.vendedor = new Modelo.Vendedor(1,"Juan", "Rodriguez");
+            this.tienda = DatosTest.TiendaArcoiris;
+            this.vendedor = DatosTest.JuanPerez;
+
+            foreach (var prenda in DatosTest.GenerarPrendas())
+                this.tienda.AgregarPrendaEnStock(prenda);
             MostrarDatos();
         }
         #endregion
@@ -29,8 +32,10 @@ namespace Controlador
         {
             var cantidad = _viewCotizador.Cantidad();
             var prenda = CrearPrenda(cantidad);
+            
+            ValidarStock(cantidad);
 
-            Modelo.Cotizacion cotizacion = new Modelo.Cotizacion(vendedor.ProximoId(),vendedor, prenda, cantidad);
+            Modelo.Cotizacion cotizacion = new Modelo.Cotizacion(vendedor.ProximoId(), vendedor, prenda, cantidad);
 
             vendedor.AgregarCotizacion(cotizacion);
 
@@ -42,6 +47,7 @@ namespace Controlador
             _viewCotizador.MostrarDireccion(tienda.Direccion);
             _viewCotizador.MostrarRazonSocial(tienda.Nombre);
             _viewCotizador.MostrarVendedor($"{vendedor.Nombre} {vendedor.Apellido} | {vendedor.Codigo}");
+            RecalcularStock();
         }
 
         private Modelo.Prenda CrearPrenda(int cantidad)
@@ -70,8 +76,70 @@ namespace Controlador
 
             return prenda;
         }
+
+        private List<Modelo.Camisa> ObtenerCamisas(Modelo.CalidadPrenda calidad, bool esMangaCorta, bool tieneCuelloMao)
+        {
+            List<Modelo.Prenda> prendas = this.tienda.PrendasEnStock.FindAll(p=>p.GetType() == typeof(Modelo.Camisa));
+            List<Modelo.Camisa> camisas = new List<Modelo.Camisa>();
+            foreach (Modelo.Prenda prenda in prendas)
+            {
+                camisas.Add((Modelo.Camisa)prenda);
+            }
+
+            return camisas.FindAll(c=>c.Calidad==calidad && c.TieneMangasLargas==!esMangaCorta&&c.TieneCuelloMao==tieneCuelloMao);
+        }
+
+        private List<Modelo.Pantalon> ObtenerPantalones(Modelo.CalidadPrenda calidad, bool esChupin)
+        {
+            List<Modelo.Prenda> prendas = this.tienda.PrendasEnStock.FindAll(p => p.GetType() == typeof(Modelo.Pantalon));
+            List<Modelo.Pantalon> pantalones = new List<Modelo.Pantalon>();
+            foreach (Modelo.Prenda prenda in prendas)
+            {
+                pantalones.Add((Modelo.Pantalon)prenda);
+            }
+
+            return pantalones.FindAll(p=>p.Calidad==calidad&&p.EsChupin==esChupin);
+        }
+
+        public int StockTotal(bool esCamisa)
+        {
+            int stockTotal = 0;
+            if (esCamisa)
+            {
+                foreach(var camisa in ObtenerCamisas(ObtenerCalidad(_viewCotizador), _viewCotizador.EsMangaCorta(), _viewCotizador.ConCuelloMao()))
+                {
+                    stockTotal += camisa.Stock;
+                }
+            }
+            else
+            {
+                foreach (var pantalon in ObtenerPantalones(ObtenerCalidad(_viewCotizador), _viewCotizador.EsChupin()))
+                {
+                    stockTotal += pantalon.Stock;
+                }
+            }
+
+            return stockTotal;
+        }
+
+        private Modelo.CalidadPrenda ObtenerCalidad(IViewCotizador view)
+        {
+            if (view.EsPremium())
+                return Modelo.CalidadPrenda.PREMIUM;
+            else
+                return Modelo.CalidadPrenda.STANDARD;
+        }
+
+        public void RecalcularStock()
+        {
+            _viewCotizador.MostrarCantidadStock(StockTotal(_viewCotizador.EsCamisa()).ToString());
+        }
+
+        private void ValidarStock(int cantidad)
+        {
+            if (cantidad > StockTotal(_viewCotizador.EsCamisa()))
+                throw new Exception("Stock insuficiente para realizar la cotizacion");
+        }
         #endregion
-
-
     }
 }
