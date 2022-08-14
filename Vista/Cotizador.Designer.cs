@@ -148,6 +148,7 @@
             this.lblHistorialCotizaciones.TabIndex = 4;
             this.lblHistorialCotizaciones.TabStop = true;
             this.lblHistorialCotizaciones.Text = "Historial Cotizaciones";
+            this.lblHistorialCotizaciones.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblHistorialCotizaciones_LinkClicked);
             // 
             // lblNombreVendedor
             // 

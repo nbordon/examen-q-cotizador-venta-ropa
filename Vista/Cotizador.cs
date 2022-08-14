@@ -184,5 +184,11 @@ namespace Vista
                 txtCotizacion.Text = "";
             }
         }
+
+        private void lblHistorialCotizaciones_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            HistorialCotizaciones historial = new HistorialCotizaciones(cotizadorController);
+            historial.Show(this);
+        }
     }
 }

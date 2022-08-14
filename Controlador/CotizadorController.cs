@@ -23,8 +23,13 @@ namespace Controlador
 
             foreach (var prenda in DatosTest.GenerarPrendas())
                 this.tienda.AgregarPrendaEnStock(prenda);
+
             MostrarDatos();
         }
+        #endregion
+
+        #region Propiedades
+        public Modelo.Vendedor Vendedor => vendedor;
         #endregion
 
         #region Métodos
@@ -39,7 +44,7 @@ namespace Controlador
 
             vendedor.AgregarCotizacion(cotizacion);
 
-            _viewCotizador.MostrarCotizacion(cotizacion.Cotizar().ToString());
+            _viewCotizador.MostrarCotizacion(cotizacion.Cotizar().ToString("0.00"));
         }
 
         public void MostrarDatos()

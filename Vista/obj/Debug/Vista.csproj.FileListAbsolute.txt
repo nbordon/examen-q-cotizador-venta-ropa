@@ -14,3 +14,4 @@ D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Modelo.dll
 D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Controlador.pdb
 D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\bin\Debug\Modelo.pdb
 D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.csproj.CopyComplete
+D:\develope\Quark\ExamenCotizadorVentaRopa\Vista\obj\Debug\Vista.HistorialCotizaciones.resources

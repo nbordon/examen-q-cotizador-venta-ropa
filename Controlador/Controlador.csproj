@@ -43,7 +43,9 @@
   <ItemGroup>
     <Compile Include="CotizadorController.cs" />
     <Compile Include="DatosTest.cs" />
+    <Compile Include="HistorialController.cs" />
     <Compile Include="IViewCotizador.cs" />
+    <Compile Include="IViewHistorial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
