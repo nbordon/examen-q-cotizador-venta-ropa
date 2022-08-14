@@ -1,0 +1,6 @@
+D:\develope\Quark\ExamenCotizadorVentaRopa\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+D:\develope\Quark\ExamenCotizadorVentaRopa\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+D:\develope\Quark\ExamenCotizadorVentaRopa\Modelo\bin\Debug\Modelo.dll
+D:\develope\Quark\ExamenCotizadorVentaRopa\Modelo\bin\Debug\Modelo.pdb
+D:\develope\Quark\ExamenCotizadorVentaRopa\Modelo\obj\Debug\Modelo.dll
+D:\develope\Quark\ExamenCotizadorVentaRopa\Modelo\obj\Debug\Modelo.pdb

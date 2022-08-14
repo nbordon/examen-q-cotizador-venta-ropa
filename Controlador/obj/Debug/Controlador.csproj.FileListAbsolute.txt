@@ -1,0 +1,9 @@
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\bin\Debug\Controlador.dll
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\bin\Debug\Controlador.pdb
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\bin\Debug\Modelo.dll
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\bin\Debug\Modelo.pdb
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\obj\Debug\Controlador.csproj.AssemblyReference.cache
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\obj\Debug\Controlador.dll
+D:\develope\Quark\ExamenCotizadorVentaRopa\Controlador\obj\Debug\Controlador.pdb
