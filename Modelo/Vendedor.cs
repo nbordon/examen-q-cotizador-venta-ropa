@@ -37,6 +37,14 @@ namespace Modelo
         {
             historialCotizaciones.Add(cotizacion);
         }
+
+        public int ProximoId()
+        {
+            if (historialCotizaciones.Count == 0)
+                return 1;
+            else
+                return 2;
+        }
         #endregion
     }
 }

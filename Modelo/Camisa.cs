@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    internal class Camisa : Prenda
+    public class Camisa : Prenda
     {
         #region Atributos
         private bool tieneCuelloMao;
